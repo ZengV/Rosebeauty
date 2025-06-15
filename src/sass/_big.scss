@@ -1,0 +1,107 @@
+@media (min-width: 1200px) {
+	.header {
+		&__company-texts {
+			&-name {
+				font-size: 5.8rem;
+			}
+			&-text {
+				max-width: 618px;
+			}
+		}
+	}
+	.nav {
+		&__items {
+			gap: 9em;
+			&-link {
+				font-size: 1.4rem;
+			}
+		}
+	}
+	.main {
+		.section {
+			&__title {
+				font-size: 3rem;
+			}
+
+			&__text {
+				max-width: 70%;
+				margin: 0 auto;
+			}
+		}
+		.about-us {
+			&__box {
+				flex-direction: row;
+				&-card {
+					.fa-solid {
+						font-size: 11rem;
+					}
+				}
+			}
+		}
+		.contact {
+			&__box {
+				padding: 3.5em 4em;
+				&-title-head {
+					text-align: left;
+					font-size: 2.1rem;
+				}
+				&-title {
+					font-size: 1.45rem;
+				}
+				&-text {
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+	.footer {
+		&__top-box-title {
+			font-size: 2.5rem;
+		}
+		&__items-link {
+			span {
+				margin: 0 5em;
+			}
+		}
+
+		&::before {
+			width: 80%;
+		}
+		&__icons-box {
+			justify-content: center;
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.footer {
+		&__items-link {
+			span {
+				margin: 0 8em;
+			}
+		}
+
+		&::before {
+			width: 75%;
+		}
+		&__icons-box {
+			.fa-brands {
+				font-size: 2.1rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 1600px) {
+	.footer {
+		&__items-link {
+			span {
+				margin: 0 9em;
+			}
+		}
+
+		&::before {
+			width: 70%;
+		}
+	}
+}

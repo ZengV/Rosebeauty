@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Forest">
+    <link rel="icon" type="image/png" href="./dist/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./dist/img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./dist/img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./dist/img/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Rosebeauty" />
+    <link rel="manifest" href="./dist/img/favicon/site.webmanifest" />
+    <title>Rosebeauty – Kosmetyki pielęgnacyjne dla każdej cery</title>
+    <meta name="description"
+        content="Odkryj kosmetyki Rosebeauty – skuteczna i delikatna pielęgnacja dla kobiet i mężczyzn. Naturalne składniki, estetyka i efekty, które pokochasz.">
+    <script src="https://kit.fontawesome.com/fa4c90e6be.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/style.min.css">
+</head>
+
+<body class="home">
+    <div id="cookie-banner" class="cookie-banner" role="dialog" aria-modal="true" aria-label="Zgoda na pliki cookies">
+    <div class="cookie-banner__wrapper">
+        <p class="cookie-banner__text">
+            Strona korzysta z plików cookies, aby zapewnić najlepszą jakość usług.
+            <a href="polityka-prywatności.html" class="cookie-banner__link">Dowiedz się więcej</a>.
+        </p>
+        <div class="cookie-banner__buttons">
+            <button id="accept-cookies" class="cookie-banner__btn cookie-banner__btn--accept">Akceptuję</button>
+            <button id="reject-cookies" class="cookie-banner__btn cookie-banner__btn--reject">Odrzucam</button>
+        </div>
+    </div>
+</div>
+    <nav class="nav">
+    <div class="wrapper flex-center">
+
+        <div class="nav__items">
+            <a href="#opinions" class="nav__items-link">Opinie</a>
+            <a href="#about-us" class="nav__items-link">O nas</a>
+            <a href="kosmetyki.html" class="nav__items-link">Kosmetyki</a>
+            <a href="#contact" class="nav__items-link">Kontakt</a>
+        </div>
+    </div>
+</nav>
+<div class="burger-btn-wrapper">
+    <button class="burger-btn" aria-expanded="false" aria-label="Otwórz menu nawigacji">
+        <div class="burger-btn__box">
+            <div class="burger-btn__bars"></div>
+        </div>
+    </button>
+</div>
+
+<div class="nav_logo">
+
+    <div class="logo-wrapper">
+        <a href="#" class="nav__company-logo-link" aria-label="Przejdź na stronę główną">
+            <img src="./dist/img/logo.png" alt="Logo" class="nav__company-logo-img" />
+        </a>
+    </div>
+</div>
+    <header class="header" data-aos="fade-down" data-aos-duration="1000">
+    <div class="wrapper flex-center" data-aos="fade-right" data-aos-delay="200">
+
+        <div class="header__company-texts flex-center" data-aos="zoom-in" data-aos-delay="400">
+            <h1 class="header__company-texts-name">rosebeauty</h1>
+            <p class="header__company-texts-text">
+                Rosebeauty to twoje miejsce z profesjonalnymi kosmetykami do pielęgnacji twarzy.<br> Oferujemy szeroką
+                gamę produktów dopasowanych do każdego typu cery:<br> oczyszczanie, nawilżanie, regeneracja i
+                rozświetlenie — od żeli i pianek, przez toniki i emulsje, aż po kremy, sera i maseczki. Dla kobiet i
+                mężczyzn, którzy cenią naturalne piękno.
+            </p>
+            <a href="kosmetyki.html" class="header__company-texts-button"
+                aria-label="Przejdź do sekcji kosmetyków Rosebeauty">
+                Odkryj piękno z Rosebeauty
+            </a>
+        </div>
+    </div>
+    <div class="header__hero-shadow" aria-hidden="true"></div>
+</header>
+    <main class="main">
+    <section class="section opinions" data-aos="fade" data-aos-delay="0" id="opinions">
+        <div class="logo-wrapper" data-aos="fade-up">
+            <h2 class="section__title" data-aos="fade-up" data-aos-delay="150">Opinie naszych klientów</h2>
+            <button aria-label="Poprzednia opinia" class="opinions__arrow opinions__arrow--left">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="opinions__slider">
+                <div class="opinions__box">
+                    <div class="opinions__box-opinion flex-center">
+                        <div class="opinions__box-opinion-face">
+                            <img alt="" src="./dist/img/woman-opinion.png" />
+                        </div>
+                        <p class="opinions__box-opinion-data" data-aos="fade" data-aos-delay="200">Anna Kowalska</p>
+                        <p class="opinions__box-opinion-text" data-aos="fade" data-aos-delay="200">" Kosmetyki
+                            Rosebeauty to odkrycie roku! Moja cera
+                            jeszcze
+                            nigdy nie była tak promienna i dobrze nawilżona. "</p>
+                        <div aria-label="Ocena: 5 na 5 gwiazdek" class="opinions__box-opinion-rating">
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="opinions__box-opinion flex-center">
+                        <div class="opinions__box-opinion-face">
+                            <img alt="" src="./dist/img/woman-opinion.png" />
+                        </div>
+                        <p class="opinions__box-opinion-data" data-aos="fade" data-aos-delay="200">Ewelina Kaczmarek</p>
+                        <p class="opinions__box-opinion-text" data-aos="fade" data-aos-delay="200">" Maseczki są
+                            genialne! Moja ulubiona to ta z witaminą
+                            C –
+                            rozświetlenie gwarantowane! "</p>
+                        <div aria-label="Ocena: 5 na 5 gwiazdek" class="opinions__box-opinion-rating">
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="opinions__box-opinion flex-center">
+                        <div class="opinions__box-opinion-face">
+                            <img alt="" src="./dist/img/man-opinion.png" />
+                        </div>
+                        <p class="opinions__box-opinion-data" data-aos="fade" data-aos-delay="200">Paweł Nowicki</p>
+                        <p class="opinions__box-opinion-text" data-aos="fade" data-aos-delay="200">" Serum regenerujące
+                            działa już po kilku dniach. Skóra
+                            wygląda zdrowiej i młodziej – polecam każdemu! "</p>
+                        <div aria-label="Ocena: 5 na 5 gwiazdek" class="opinions__box-opinion-rating">
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="opinions__box-opinion flex-center">
+                        <div class="opinions__box-opinion-face">
+                            <img alt="" src="./dist/img/woman-opinion.png" />
+                        </div>
+                        <p class="opinions__box-opinion-data" data-aos="fade" data-aos-delay="200">Monika Zielińska</p>
+                        <p class="opinions__box-opinion-text" data-aos="fade" data-aos-delay="200">" Uwielbiam zapach i
+                            konsystencję kremów. Zero
+                            podrażnień,
+                            a efekty widoczne bardzo szybko. "</p>
+                        <div aria-label="Ocena: 5 na 5 gwiazdek" class="opinions__box-opinion-rating">
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="opinions__box-opinion flex-center">
+                        <div class="opinions__box-opinion-face">
+                            <img alt="" src="./dist/img/woman-opinion.png" />
+                        </div>
+                        <p class="opinions__box-opinion-data" data-aos="fade" data-aos-delay="200">Katarzyna Wójcik</p>
+                        <p class="opinions__box-opinion-text" data-aos="fade" data-aos-delay="200">" Naturalny skład i
+                            skuteczność w jednym. Rosebeauty
+                            udowadnia, że pielęgnacja może być luksusowa i łagodna. "</p>
+                        <div aria-label="Ocena: 5 na 5 gwiazdek" class="opinions__box-opinion-rating">
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="opinions__box-opinion flex-center">
+                        <div class="opinions__box-opinion-face">
+                            <img alt="" src="./dist/img/man-opinion.png" />
+                        </div>
+                        <p class="opinions__box-opinion-data" data-aos="fade" data-aos-delay="200">Tomasz Lewandowski
+                        </p>
+                        <p class="opinions__box-opinion-text" data-aos="fade" data-aos-delay="200">" Mam wymagającą
+                            cerę, ale ich tonik świetnie się
+                            sprawdza. Lekki, ale działa dokładnie tak, jak powinien. "</p>
+                        <div aria-label="Ocena: 5 na 5 gwiazdek" class="opinions__box-opinion-rating">
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="opinions__box-opinion flex-center">
+                        <div class="opinions__box-opinion-face">
+                            <img alt="" src="./dist/img/woman-opinion.png" />
+                        </div>
+                        <p class="opinions__box-opinion-data" data-aos="fade" data-aos-delay="200">Agnieszka Dąbrowska
+                        </p>
+                        <p class="opinions__box-opinion-text" data-aos="fade" data-aos-delay="200">" Dzięki Rosebeauty
+                            pozbyłam się przesuszenia skóry.
+                            Teraz
+                            wyglądam świeżo nawet bez makijażu! "</p>
+                        <div aria-label="Ocena: 5 na 5 gwiazdek" class="opinions__box-opinion-rating">
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="opinions__box-opinion flex-center">
+                        <div class="opinions__box-opinion-face">
+                            <img alt="" src="./dist/img/woman-opinion.png" />
+                        </div>
+                        <p class="opinions__box-opinion-data" data-aos="fade" data-aos-delay="200">Marta Wiśniewska</p>
+                        <p class="opinions__box-opinion-text" data-aos="fade" data-aos-delay="200">" Cenię estetykę i
+                            działanie. Produkty Rosebeauty
+                            wyglądają pięknie na półce i robią robotę. "</p>
+                        <div aria-label="Ocena: 5 na 5 gwiazdek" class="opinions__box-opinion-rating">
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="opinions__box-opinion flex-center">
+                        <div class="opinions__box-opinion-face">
+                            <img alt="" src="./dist/img/man-opinion.png" />
+                        </div>
+                        <p class="opinions__box-opinion-data" data-aos="fade" data-aos-delay="200">Tomasz Kowalski</p>
+                        <p class="opinions__box-opinion-text" data-aos="fade" data-aos-delay="200">" Mam wymagającą
+                            cerę, ale ich tonik świetnie się
+                            sprawdza. Lekki, ale działa dokładnie tak, jak powinien. "</p>
+                        <div aria-label="Ocena: 5 na 5 gwiazdek" class="opinions__box-opinion-rating">
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                            <i aria-hidden="true" class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button aria-label="Następna opinia" class="opinions__arrow opinions__arrow--right">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div class="opinions__pager"></div>
+        </div>
+    </section>
+    <section class="section about-us" data-aos="fade" data-aos-delay="75" id="about-us">
+        <div class="wrapper" data-aos="fade-up">
+            <h2 class="section__title" data-aos="fade-up" data-aos-delay="150">Co wyróżnia Rosebeauty?</h2>
+            <p class="section__text" data-aos="fade" data-aos-delay="200">Rosebeauty to połączenie elegancji i
+                skutecznej pielęgnacji. Tworzymy
+                kosmetyki,
+                które odpowiadają na potrzeby każdej skóry — bez względu na wiek, płeć czy typ cery.</p>
+            <div class="about-us__box flex-center">
+                <div class="about-us__box-card">
+                    <i class="fa-solid fa-leaf"></i>
+                    <h3 class="about-us__box-card-title">Składniki, które działają</h3>
+                    <p class="about-us__box-card-text" data-aos="fade" data-aos-delay="200">Formuły stworzone z miłością
+                        do
+                        skóry, bez kompromisów.</p>
+                </div>
+                <div class="about-us__box-card">
+                    <i class="fa-solid fa-sun"></i>
+                    <h3 class="about-us__box-card-title">Widoczne efekty</h3>
+                    <p class="about-us__box-card-text" data-aos="fade" data-aos-delay="200">Nawilżona, odświeżona i
+                        promienna skóra
+                        już po pierwszym użyciu.</p>
+                </div>
+                <div class="about-us__box-card">
+                    <i class="fa-solid fa-gem"></i>
+                    <h3 class="about-us__box-card-title">Estetyka i jakość</h3>
+                    <p class="about-us__box-card-text" data-aos="fade" data-aos-delay="200"> Kosmetyki, które nie tylko
+                        pielęgnują,
+                        ale też cieszą oko.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section contact" data-aos="fade" data-aos-delay="150" id="contact">
+        <div class="logo-wrapper" data-aos="fade-up">
+            <button aria-expanded="false" aria-label="Otwórz dane kontaktowe" class="contact__icon">
+                <i class="fa-solid fa-phone"></i>
+            </button>
+            <div class="contact__box">
+                <h2 class="contact__box-title-head" data-aos="fade-up" data-aos-delay="150">Skontaktuj się z nami!</h2>
+                <p class="contact__box-title" data-aos="fade" data-aos-delay="200">Dane kontaktowe:</p>
+                <ul class="contact__box-text">
+                    <li>Imię i Nazwisko</li>
+                    <li>Telefon: +48 123 456 789</li>
+                    <li>E-mail: imie.nazwisko@rosebeauty.pl</li>
+                </ul>
+                <p class="contact__box-title contact__box-title--padding" data-aos="fade" data-aos-delay="200">Dane
+                    firmowe:</p>
+                <ul class="contact__box-text">
+                    <li></li>Rosebeauty Studio
+                    <li>ul. Piękna 1</li>
+                    <li>00-123 Warszawa</li>
+                    <li>NIP: 123-456-78-90</li>
+                    <li>Telefon: +48 987 654 321</li>
+                    <li>E-mail: kontakt@rosebeauty.pl</li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact__map" id="map"></div>
+    </section>
+</main>
+    <footer class="footer" data-aos="fade" data-aos-delay="100">
+    <div class="logo-wrapper">
+        <div class="footer__top-box flex-center">
+            <img alt="Logo Rosebeauty" class="footer__top-box-logo" src="./dist/img/logo.png" />
+            <h2 class="footer__top-box-title">rosebeauty</h2>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="footer__items">
+            <div class="footer__links">
+                <a class="footer__items-link" href="#"><span>Home</span></a>
+                <a class="footer__items-link" href="#opinions"><span>Opinie</span></a>
+                <a class="footer__items-link" href="#about-us"><span>O nas</span></a>
+                <a class="footer__items-link" href="kosmetyki.html"><span>Kosmetyki</span></a>
+                <a class="footer__items-link" href="#contact"><span>Kontakt</span></a>
+                <a class="footer__items-link" href="polityka-prywatności.html"><span>Polityka prywatności</span></a>
+            </div>
+        </div>
+        <div class="footer__icons-box">
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+        <div class="footer__bottom-box">
+            <p class="footer__bottom-box-text">Naturalna pielęgnacja z klasą</p>
+            <p class="footer__bottom-box-title"><span class="footer__year"></span> © rosebeauty </p>
+        </div>
+    </div>
+</footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="./dist/js/map.min.js"></script>
+    <script src="./dist/js/main.min.js"></script>
+</body>
+
+</html>

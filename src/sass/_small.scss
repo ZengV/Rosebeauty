@@ -1,0 +1,288 @@
+@media (min-width: 360px) {
+	.main {
+		.contact {
+			&__box {
+				padding: 1em 4.5em;
+			}
+		}
+	}
+}
+
+@media (min-width: 420px) {
+	.main {
+		.contact {
+			&__box {
+				padding: 1em 7em;
+			}
+		}
+	}
+}
+@media (min-width: 460px) {
+	.main {
+		.contact {
+			&__box {
+				padding: 1em 9em;
+			}
+		}
+	}
+}
+@media (min-width: 500px) {
+	.main {
+		.contact {
+			&__box {
+				padding: 1em 11em;
+			}
+		}
+	}
+}
+@media (min-width: 540px) {
+	.main {
+		.contact {
+			&__box {
+				padding: 1em 12em;
+			}
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.main .cosmetics__box-cards-card {
+		max-width: 380px;
+	}
+}
+
+@media (min-width: 576px) {
+	.main .cosmetics__box-cards-card {
+		max-width: 440px;
+	}
+	.header {
+		&__company-texts {
+			&-name {
+				font-size: 3.7rem;
+			}
+			&-text {
+				font-size: 1.2rem;
+			}
+		}
+	}
+	.main {
+		.contact {
+			.contact__icon {
+				left: -1em;
+			}
+			&__box {
+				padding: 2em 4em;
+				&-title {
+					font-size: 1.4rem;
+				}
+				&-text {
+					font-size: 1.15rem;
+				}
+				&-title-head {
+					font-size: 1.85rem;
+				}
+			}
+		}
+	}
+	.section {
+		&__title {
+			font-size: 2.4rem;
+		}
+		&__text {
+			font-size: 1.2rem;
+		}
+	}
+	.about-us {
+		&__box {
+			&-card {
+				.fa-solid {
+					font-size: 7rem;
+				}
+				&-title {
+					font-size: 1.5rem;
+				}
+				&-text {
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+	.opinions {
+		&__box {
+			&-opinion {
+				&-text {
+					font-size: 1.1rem;
+				}
+				&-rating {
+					font-size: 1.1rem;
+				}
+			}
+		}
+	}
+	.footer {
+		&__top-box-title {
+			font-size: 2rem;
+		}
+		&__links {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&__items {
+			padding-top: 4.5em;
+			&-link {
+				flex: 1 1 50%;
+			}
+		}
+		&::before {
+			top: 70%;
+		}
+	}
+	@keyframes expandFromIcon {
+		from {
+			transform: scale(0);
+			opacity: 0;
+		}
+		to {
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+	@keyframes goToIcon {
+		from {
+			transform: scale(1);
+			opacity: 1;
+		}
+		to {
+			transform: scale(0);
+			opacity: 0;
+		}
+	}
+}
+@media (min-width: 683px) {
+	.main .cosmetics__box-cards-card {
+		max-width: 275px;
+		flex: 1 1 275px;
+	}
+}
+@media (min-width: 695px) {
+	.main .cosmetics__box-cards-card {
+		max-width: 280px;
+		flex: 1 1 280px;
+	}
+}
+@media (min-width: 718px) {
+	.main .cosmetics__box-cards-card {
+		max-width: 290px;
+		flex: 1 1 290px;
+	}
+}
+
+@media (min-width: 741px) {
+	.main .cosmetics__box-cards-card {
+		max-width: 300px;
+		flex: 1 1 300px;
+	}
+}
+
+@media (min-width: 768px) {
+	.main .cosmetic__box-texts-text {
+		font-size: 1.25rem;
+	}
+	.main .cosmetic__box-texts-list li {
+		font-size: 1.15rem;
+	}
+	.main .cosmetic__box-texts-list li i {
+		font-size: 1.1rem;
+	}
+	.header {
+		.flex-center {
+			justify-content: start;
+		}
+		&__company-texts {
+			align-items: start;
+			&-name {
+				font-size: 4.2rem;
+			}
+			&-text {
+				text-align: left;
+				max-width: 448px;
+			}
+			&-button {
+				font-size: 1.2rem;
+			}
+		}
+	}
+	.main {
+		.section {
+			&__title {
+				font-size: 2.6rem;
+			}
+		}
+		.opinions {
+			&__box {
+				&-opinion {
+					min-width: calc(50% - 10px);
+				}
+			}
+		}
+	}
+	.footer {
+		&__top-box-title {
+			font-size: 2.2rem;
+		}
+		&__items {
+			display: flex;
+			justify-content: center;
+		}
+		&__items-link {
+			display: block;
+			flex: 1 1 33.33%;
+			span {
+				padding: 1em 1em 1em 0;
+			}
+		}
+
+		&::before {
+			top: 63%;
+			width: 80%;
+		}
+		.fa-brands {
+			font-size: 2rem;
+		}
+		&__bottom-box-title {
+			font-size: 1.4rem;
+		}
+		&__bottom-box-text {
+			font-size: 1rem;
+		}
+		&__icons-box {
+			margin-top: 1em;
+		}
+	}
+	.privacy-policy {
+		max-width: 800px;
+		padding: 20px 15px;
+
+		&__title {
+			font-size: 2.8rem;
+			margin-bottom: 2rem;
+		}
+
+		&__heading {
+			font-size: 1.8rem;
+			margin-bottom: 1rem;
+		}
+
+		&__text,
+		&__list-item {
+			font-size: 1rem;
+			line-height: 1.6;
+		}
+	}
+}
+
+@media (min-width: 789px) {
+	.main .cosmetics__box-cards-card {
+		max-width: 320px;
+	}
+}

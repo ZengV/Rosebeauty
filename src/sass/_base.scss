@@ -1,0 +1,45 @@
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+.html--hidden {
+	overflow: hidden;
+}
+
+body {
+	background-color: #0a1f44;
+	color: #fff;
+	font-size: 62.5%;
+	overflow-x: hidden;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper,
+.logo-wrapper {
+	margin: 0 auto;
+	width: 85%;
+	height: 100%;
+	max-width: 1300px;
+}
+
+.logo-wrapper {
+	position: relative;
+	z-index: 77;
+}
+
+.burger-btn-wrapper {
+	position: fixed;
+	top: 40px;
+	right: 45px;
+	width: auto;
+	display: flex;
+	justify-content: flex-end;
+	z-index: 1001;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
